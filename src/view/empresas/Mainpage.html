@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleate.com.do</title>
+    <link rel="stylesheet" href="../public/CSS/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="../public/CSS/bootstrap-reboot.min.css" type="text/css">
+    <link rel="stylesheet" href="../public/CSS/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../public/CSS/main.css">
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+</head>
+<!--Termina el Header de mi pestaña-->
+<body>
+    <header>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+             <div class="card-body">
+             <h4 class="card-title d-flex justify-content-between align-items-center">
+             <a href="/notes/edit/{{_id}}"><i class="fas fa-edit"></i></a></h4>
+             <p>{{ description }} </p>
+                          <!-- DELETE REQUEST -->
+            <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="submit" class="btn btn-danger btn-block btn-sm">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="card mx-auto">
+    <div class="card-body">
+    <h1>Hello {{user.name}}</h1>
+    <p clsss="lead">There are not Notes yet.</p>
+    <a href="/notes/add" class="btn btn-success btn-block">Create One!</a>
+</div>
+</div>
+{{/each}}
+    </div>
+     <main>
+         <div class="jumbotron mt-4">
+         <h2 class="display-4">Bienvenido a Empleate</h2>
+         <p class="lead">estas en el mejor lugar para encontrar tu proximo empleo</p>
+        <hr class="my-4">
+            <button type="button" id="btnpostjob" class="btn btn-secondary">comienza tu nueva aventura
+      <i class="far fa-plus-square"></i>
+   </button>
+ </div>  
+
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</main>    
