@@ -1,0 +1,57 @@
+body.html {
+    height: 100%
+}
+body{
+
+    margin: 8%;
+    padding: 0%;
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-box{
+
+    width: 300px ;
+    padding: 40px;
+    background: rgb(59, 192, 170);
+    text-align: center;
+}
+
+.form-title{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+.form-box input[type="text"]:focus,
+.form-box input[type="text"]:focus,
+.form-box input[type="text"]:focus,
+.form-box input[type="text"]:focus,
+.form-box input[type="email"]:focus,
+.form-box input[type="password"]:focus{
+    width: 280px;
+    border-color: #fff;
+}
+
+
+.form-box button[type="submit"]{
+ border: 0;
+ background: none;
+ display: block;
+ margin: 20px auto;
+ padding: 14px 10px;
+ text-align: center;
+ border: 2px solid #3742fa;
+ outline: none;
+ color: white;
+ border-radius: 24px;
+ transition: 0.25s;
