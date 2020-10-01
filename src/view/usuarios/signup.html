@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/CSS/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="../../public/CSS/bootstrap-reboot.min.css" type="text/css">
+    <link rel="stylesheet" href="../../public/CSS/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./../Document_files/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../public/CSS/signup.css">
+    <title>Document</title>
+</head>
+<!--Termina el Header de mi pestaña-->
+<body>
+    <header>
+        <!--Cabecera-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/src/view/index.html">Empleate</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/src/view/api/apikey.html">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/src/view/usuarios/login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/src/view/usuarios/signup.html">Register</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" 
+                     aria-haspopup="true" aria-expanded="false">
+                    dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item""></a>
+                    <a class="dropdown-item" > </a>
+                    <div class="dropdown-divider"></div></a>
+                  
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</a></button>
+              </form>
+            </div>
+          </nav><!--Fin de cabecera-->
+    </header>
+<body>
+    <div class="container">
+        <div class="abs-center">
+            <center>
+                    <h3> Empleate </h3>
+                    <br>
+                    <br><br>
+                    <br>
+                <h1>Formulario de Empleados</h1>
+            <form action="/src/view/usuarios/signup.html" method="post" class="form-register" onsubmit="return validar();">
+                <h2 class="form-titulo"> CREA UNA CUENTA </h2>
+                <form action="/src/routes/usuarios.js" method="POST"></form>
+                <div class="form-group">
+                    <input class="form-control", type="text" id="nombre" name="nombre" placeholder="Nombre" class="input-48" required="">
+                    <input class="form-control", type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required="">
+                    <input class="form-control", type="text" id="location" name="location" placeholder="Location" class="input-48" required="">
+                    <br>
+                    <br>
+                    <input class="form-control", type="text" id="telefono" name="telefono" placeholder="Telefono" class="input-48" required="">
+                    <input class="form-control", type="email" id="correo" name="correo" placeholder="Correo" class="input-48" required="">
+                    <input class="form-control",type="password" id="contraseña" name="password" placeholder="Password" class="input-48" required="">
+                    <br>
+                    <br>
+                    <input type="submit" value="Registrar" class="btn btn-primary mb-2" required="">
+                </center>
+                </div>
+            </form>
+</div>
+</div>
+</body>
+</html>
