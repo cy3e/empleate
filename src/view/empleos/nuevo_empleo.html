@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleate.com.do</title>
+    <link rel="stylesheet" href="../../public/CSS/bootstrap-reboot.min.css" type="text/css">
+    <link rel="stylesheet" href="../../public/CSS/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../../public/CSS/new.css">
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+</head>
+<!--Termina el Header de mi pestaña-->
+<body>
+    <header>
+        <!--Cabecera-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/src/view/index.html">Empleate</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/src/view/api/apikey.html">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/src/view/usuarios/login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/src/view/usuarios/signup.html">Register</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="/src/view/about.html">About
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</a></button>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <br>
+    <br>
+<center>       
+    <header>
+    <div class="row">
+        <div class="card mx-auto">
+        
+                <p>____________________________________________________________________</p>
+                <h2>ingresa tu empleo</h2>
+
+                <hr class="my-4">
+                <form action="">
+                    <input type="text" id="titulo" placeholder="ingrese un titulo" required: true>
+               <br>
+               <br>
+                    <input type="text" id="busco" placeholder="Yo busco" required: true>
+               <br>
+               <br>
+                    <input type="text" id="descripcion" placeholder="breve descripcion" required: true>
+               <br>
+               <br>
+                    <input type="text" id="ubicacion" placeholder="ubicacion" required: true>
+               <br>
+               <br>
+                    <input type="text" id="nombre" placeholder="nombre de la compañia" required: true>
+               <br> 
+               <br>
+               <select name="customers" onchange="showCustomer(this.value)">
+                    <option value="none">Select a customer:</option>
+                    <option value="total">total</option>
+                    <option value="parcial">parcial</option>
+                    <option value="chiripa">chiripa</option>
+                    </select>
+               <br>
+               <br>
+
+                </form>
+                <button type="button" id="btnpostjob" class="btn btn-secondary"> <a href="/src/view/empresas/Mainpage.html">subir empleo</a> 
+                   <i class="far fa-plus-square"></i>
+                </button>
+               <p>____________________________________________________________________</p>
+              </div>  
+            </div>
+            <br>
+            <br>
+            <br>
+                    <div class="jumbotron mt-4">
+        </center>
+        </body>
+    </head>
+</html>
